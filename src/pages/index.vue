@@ -9,7 +9,6 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <toggle-menu />
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
     </p>

@@ -11,7 +11,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav class="text-xl mt-6">
+  <header class="flex justify-between text-xl">
     <button
       class="icon-btn mx-2 !outline-none"
       :title="t('button.toggle_dark')"
@@ -24,5 +24,5 @@ const toggleLocales = () => {
     <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales">
       <carbon-language />
     </a>
-  </nav>
+  </header>
 </template>

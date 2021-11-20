@@ -8,7 +8,7 @@ export function usePageRouter() {
     {
       name: 'home',
       url: '/',
-      isCurrent: false,
+      isCurrent: true,
     },
     {
       name: 'about',
