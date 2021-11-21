@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { usePageRouter } from '~/composables'
+import { usePageRouterStore } from '~/stores'
 
-const { nextPage, goToNextPage } = usePageRouter()
+const { currPage, goToNextPage } = usePageRouterStore()
 const { t } = useI18n()
 
 </script>
@@ -9,7 +9,7 @@ const { t } = useI18n()
 <template>
   <div>
     <button class="m-3 text-sm btn" @click="goToNextPage">
-      {{ t(nextPage.name) }}
+      {{ t(currPage.next) }}
     </button>
   </div>
 </template>

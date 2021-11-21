@@ -1,6 +1,4 @@
-import { Page } from '~/types'
-
-
+/*
 export function usePageRouter() {
   const router = useRouter()
 
@@ -37,3 +35,4 @@ export function usePageRouter() {
     goToNextPage,
   }
 }
+*/

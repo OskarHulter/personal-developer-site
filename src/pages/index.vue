@@ -19,9 +19,6 @@ const { t } = useI18n()
     <p>
       <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
     </p>
-
-    <div class="py-4" />
-    <next-page-button />
   </div>
 </template>
 

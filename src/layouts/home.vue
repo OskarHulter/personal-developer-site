@@ -3,8 +3,9 @@
     <Header />
     <router-view />
     <div class="mt-5 mx-auto text-center opacity-25 text-sm">
-      [Home Layout]
+      Need a hand with React or Vue? Get in touch!
     </div>
+    <next-page-button />
     <Footer />
   </main>
 </template>
