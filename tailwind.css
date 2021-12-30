@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-dark {
+  --color-bg-primary: #ff73b3;
+  --color-bg-secondary: #6f72b9;
+  --color-bg-default: #fff;
+  --color-bg-inverse: #5255ac;
+
+  --color-text-primary: #fff;
+  --color-text-secondary: #44467b;
+  --color-text-default: #373737;
+  --color-text-default-soft: #6a6a6a;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: rgba(255, 255, 255, 0.7);
+
+  --font-display: Futura, Trebuchet MS, Arial, sans-serif;
+  --font-body: Futura, Trebuchet MS, Arial, sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-display: 600;
+  --font-weight-btn: 600;
+
+  --rounded-btn: 9999px;
+}
+
+.theme-light {
+  --color-bg-primary: #0252cc;
+  --color-bg-secondary: #ffc402;
+  --color-bg-default: #fff;
+  --color-bg-inverse: #fff;
+
+  --color-text-primary: #fff;
+  --color-text-secondary: #755f17;
+  --color-text-default: #444;
+  --color-text-default-soft: #999;
+  --color-text-inverse: #444;
+  --color-text-inverse-soft: #999;
+
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-display: 400;
+  --font-weight-btn: 600;
+
+  --rounded-btn: 0.25rem;
+}
+
+.theme-overload {
+  --color-bg-primary: #c0b283;
+  --color-bg-secondary: #dcd0c0;
+  --color-bg-default: #f4f4f4;
+  --color-bg-inverse: #373737;
+
+  --color-text-primary: #fff;
+  --color-text-secondary: #927e7e;
+  --color-text-default: #373737;
+  --color-text-default-soft: #6a6a6a;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: #bbb;
+
+  --font-display: Georgia, Times, "Times New Roman", serif;
+  --font-body: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-display: 400;
+  --font-weight-btn: 600;
+
+  --rounded-btn: 0;
+}
+
+//*{box-sizing: border-box;}
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  justify-content: center;
+  background-color:darken(#252B37, 4%);
+}
+
+@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+  &:after {
+    position: absolute;
+    content: "";
+    top: $y;
+    left: $x;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale($size);
+    -webkit-filter: blur($spread);
+    -moz-filter: blur($spread);
+    -ms-filter: blur($spread);
+    filter: blur($spread);
+    background: linear-gradient(270deg, $colorA, $colorB);
+    background-size: 200% 200%;
+    animation: animateGlow $duration ease infinite;
+    
+    @keyframes animateGlow {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  }
+}
+
+.glowing-card {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  line-height: 30vw;
+  text-align: center;
+  color: #252B37;
+  background-color: #151823;
+  animation: textColor 10s ease infinite;
+  @include backlight(0, 5vw, 5vw, 0.75, #0fffc1, #7e0fff, 10s);
+    
+  @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
+    }
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
+
+:root {
+  --color-brand-primary: #4a156b;
+  --color-brand-secondary: #9c075a;
+  --color-bg-primary: #182C51;
+  --color-bg-secondary: #4a156b;
+  --color-bg-default: #4a156b;
+  --color-bg-inverse: #373737;
+
+  --color-text-primary: #fff;
+  --color-text-secondary: #927e7e;
+  --color-text-default: #373737;
+  --color-text-default-soft: #6a6a6a;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: #bbb;
+
+  --font-display: 'IBM Plex Sans', sans-serif, system-ui;
+  --font-body: 'Nunito', Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-display: 400;
+  --font-weight-btn: 600;
+
+  --rounded-btn: 0;-
+}

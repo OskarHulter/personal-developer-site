@@ -37,7 +37,9 @@ export function usePageRouter() {
 }
 */
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { Page } from '~/types'
+
+
+import type { Page } from '~/types'
 
 
 export const usePageRouter = defineStore('pageRouter', () => {

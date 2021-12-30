@@ -15,7 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
     "types": [
-      "cypress",
+      "pinia",
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
