@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '~/composables'
+import { isDark, toggleDark } from '~/utils'
 
 const { t, availableLocales, locale } = useI18n()
 
@@ -11,7 +11,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <header class="flex justify-between text-xl">
+  <header class="flex p-4 bg-purple-900 justify-between text-xl">
     <button
       class="icon-btn mx-2 !outline-none"
       :title="t('button.toggle_dark')"

@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
+import { useUser } from '~/composables'
 
 const props = defineProps<{ name: string }>()
-const router = useRouter()
-const user = useUserStore()
+const user = useUser()
 const { t } = useI18n()
 
 watchEffect(() => {
@@ -38,12 +37,7 @@ watchEffect(() => {
     </template>
 
     <div>
-      <button
-        class="btn m-3 text-sm mt-6"
-        @click="router.back()"
-      >
-        {{ t('button.back') }}
-      </button>
+      <BackButton />
     </div>
   </div>
 </template>

@@ -1,3 +1,4 @@
+/* eslint import/order: 0 */
 import LinkAttributes from 'markdown-it-link-attributes'
 import Prism from 'markdown-it-prism'
 import path from 'path'

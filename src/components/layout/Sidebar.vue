@@ -1,15 +1,9 @@
-<script setup lang="ts">
-
-const { t } = useI18n()
-
-</script>
-
 <template>
-  <nav class="text-xl mt-6">
-    <router-link class="icon-btn mx-2" to="/" :title="t('button.home')">
+  <nav class="flex flex-col p-4 bg-blue-400 text-xl">
+    <router-link class="icon-btn mx-2" to="/" :title="'home'">
       <carbon-campsite />
     </router-link>
-    <router-link class="icon-btn mx-2" to="/about" :title="t('button.about')">
+    <router-link class="icon-btn mx-2" to="/about" :title="'about'">
       <carbon-dicom-overlay />
     </router-link>
 

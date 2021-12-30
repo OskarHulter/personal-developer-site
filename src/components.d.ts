@@ -4,21 +4,23 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Button: typeof import('./components/Button.vue')['default']
+    BackButton: typeof import('./components/buttons/BackButton.vue')['default']
+    BaseButton: typeof import('./components/buttons/BaseButton.vue')['default']
     CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
     CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
     CarbonLanguage: typeof import('~icons/carbon/language')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
-    CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
-    CarbonWarning: typeof import('~icons/carbon/warning')['default']
-    Footer: typeof import('./components/Footer.vue')['default']
-    Header: typeof import('./components/Header.vue')['default']
-    LinkButton: typeof import('./components/LinkButton.vue')['default']
-    NextPageButton: typeof import('./components/NextPageButton.vue')['default']
+    ContentContainer: typeof import('./components/layout/ContentContainer.vue')['default']
+    FooterContainer: typeof import('./components/layout/FooterContainer.vue')['default']
+    HeaderContainer: typeof import('./components/layout/HeaderContainer.vue')['default']
+    LayoutContainer: typeof import('./components/layout/LayoutContainer.vue')['default']
+    MainContainer: typeof import('./components/layout/MainContainer.vue')['default']
+    NextPageButton: typeof import('./components/buttons/NextPageButton.vue')['default']
+    PageHeading: typeof import('./components/text/PageHeading.vue')['default']
     README: typeof import('./components/README.md')['default']
-    ToggleMenu: typeof import('./components/ToggleMenu.vue')['default']
+    Sidebar: typeof import('./components/layout/Sidebar.vue')['default']
   }
 }
 

@@ -1,9 +1,4 @@
 <script setup lang="ts">
-// import { useUserStore } from '~/stores/user'
-
-// const user = useUserStore()
-// const name = ref(user.savedName)
-
 const { t } = useI18n()
 </script>
 
@@ -13,7 +8,7 @@ const { t } = useI18n()
       <carbon-campsite class="inline-block" />
     </p>
     <h1>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">Oskar Hulter</a>
+      <a rel="noreferrer" href="https://github.com/OskarHulter" target="_blank">Oskar Hulter</a>
     </h1>
 
     <p>
@@ -21,8 +16,3 @@ const { t } = useI18n()
     </p>
   </div>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: home
-</route>
