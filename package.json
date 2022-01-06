@@ -12,15 +12,25 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@formvuelate/plugin-vee-validate": "^3.8.1",
     "@vueuse/core": "^6.9.2",
     "@vueuse/head": "^0.6.0",
+    "@xstate/immer": "^0.3.0",
+    "@xstate/vue": "^0.8.1",
+    "coingecko-api-v3": "^0.0.13",
+    "formvuelate": "^3.8.1",
+    "immer": "^9.0.7",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.9",
     "prism-theme-vars": "^0.2.2",
+    "vee-validate": "^4.5.7",
     "vue": "^3.2.26",
     "vue-demi": "^0.12.1",
     "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "xstate": "^4.27.0",
+    "zod": "^3.11.6",
+    "zod-to-ts": "^0.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.14.2",
@@ -33,9 +43,11 @@
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/compiler-sfc": "^3.2.26",
     "@vue/server-renderer": "^3.2.26",
+    "@windicss/plugin-animations": "^1.0.9",
+    "@windicss/plugin-scrollbar": "^1.2.3",
     "critters": "^0.0.15",
     "cross-env": "^7.0.3",
-    "eslint": "^8.5.0",
+    "eslint": "^8.6.0",
     "https-localhost": "^4.7.0",
     "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.2.1",
@@ -45,13 +57,13 @@
     "unplugin-icons": "^0.13.0",
     "unplugin-vue-components": "^0.17.11",
     "vite": "^2.7.10",
-    "vite-plugin-inspect": "^0.3.11",
+    "vite-plugin-inspect": "^0.3.12",
     "vite-plugin-md": "^0.11.7",
     "vite-plugin-pages": "^0.19.8",
     "vite-plugin-pwa": "^0.11.12",
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.6.1",
-    "vite-ssg": "^0.17.2",
+    "vite-ssg": "^0.17.5",
     "vue-tsc": "^0.30.1"
   }
 }

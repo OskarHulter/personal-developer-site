@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .theme-dark {
-  --color-bg-primary: #ff73b3;
+  --color-bg-primary: #00aef6;
   --color-bg-secondary: #6f72b9;
-  --color-bg-default: #fff;
+  --color-bg-default: #18bee5;
   --color-bg-inverse: #5255ac;
 
   --color-text-primary: #fff;
@@ -26,8 +28,9 @@
 }
 
 .theme-light {
+
   --color-bg-primary: #0252cc;
-  --color-bg-secondary: #ffc402;
+  --color-bg-secondary: #0095f9;
   --color-bg-default: #fff;
   --color-bg-inverse: #fff;
 
@@ -49,7 +52,7 @@
 }
 
 .theme-overload {
-  --color-bg-primary: #c0b283;
+  --color-bg-primary: #3f77e9;
   --color-bg-secondary: #dcd0c0;
   --color-bg-default: #f4f4f4;
   --color-bg-inverse: #373737;
@@ -72,8 +75,6 @@
 
   --rounded-btn: 0;
 }
-
-//*{box-sizing: border-box;}
 
 .backdrop {
   display: flex;
@@ -134,6 +135,7 @@
     }
   }
 }
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
 
 :root {
@@ -145,7 +147,7 @@
   --color-bg-inverse: #373737;
 
   --color-text-primary: #fff;
-  --color-text-secondary: #927e7e;
+  --color-text-secondary: #3f77e9;
   --color-text-default: #373737;
   --color-text-default-soft: #6a6a6a;
   --color-text-inverse: #fff;
@@ -160,5 +162,5 @@
   --font-weight-display: 400;
   --font-weight-btn: 600;
 
-  --rounded-btn: 0;-
+  --rounded-btn: 0;
 }
